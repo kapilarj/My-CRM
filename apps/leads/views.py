@@ -237,5 +237,3 @@ def DownloadCsv(request,id):
     return response
 
 
-
-
