@@ -76,7 +76,9 @@ def auth_login(request):
         if user:
             login(request, user)
             return JsonResponse(data={'success':'success'})
+        return JsonResponse(data={'success': 'failure'})
          #return redirect(reverse('users:welcome'))
+    # return HttpResponse("yaha ja raha hai kya")
     return render(request, 'users/registration/Login/login.html')
 
 

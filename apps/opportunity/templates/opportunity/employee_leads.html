@@ -88,7 +88,7 @@
                                                     <td>{{ op.lead.email }}</td>
                                                     <!--<td>{{ op.status }}</td>-->
                                                     {% if op.assigned_to.username == user.username or user.designation == 'Manager' %}
-                                                    <td><a href="javascript:void(0)" data-some = "{{ op.pk }}"  data-toggle="modal"  data-target="#exampleModalCenter{{ op.id }}" class="status form_link">{{ op.status }}</a></td>
+                                                    <td><a href="#" data-some = "{{ op.pk }}"  data-toggle="modal"  data-target="#exampleModalCenter{{ op.id }}" class="status form_link">{{ op.status }}</a></td>
                                                     <div class="modal fade" id="exampleModalCenter{{op.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered" role="document">
                                                             <div class="modal-content">
